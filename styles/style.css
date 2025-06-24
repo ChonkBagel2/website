@@ -1,0 +1,242 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Fonts  */
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.lora-10 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.oregano-regular {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 120px;
+}
+
+.oregano-regular-italic {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Top section  */
+
+.top-container {
+  height: 90vh;
+  padding-top: 1px;
+  /* To avoid margin collapsing */
+  border-bottom: solid 2px black;
+  box-shadow: 4px 20px 10px lightseagreen;
+  background-image: url("../assets/background.jpg");
+}
+
+.top-text {
+  margin-top: 400px;
+  /* Do not use % as % calculation is based on parent's *width*, not height */
+  padding-left: 20px;
+}
+
+/* / For smaller screens  */
+
+@media (max-width: 600px) {
+  .top-container {
+    height: 90vh;
+    padding-top: 1px;
+    /* To avoid margin collapsing */
+    border-bottom: solid 2px black;
+    box-shadow: 4px 20px 10px lightseagreen;
+    background-image: url("../assets/background.jpg");
+  }
+
+  .top-text {
+    margin-top: 360px;
+    /* Do not use % as % calculation is based on parent's *width*, not height */
+    padding-left: 20px;
+  }
+}
+
+/* About section  */
+
+.about-container {
+  margin-top: 100px;
+  height: 700px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-box {
+  padding-left: 20px;
+  width: 60%;
+}
+
+.right-box {
+  padding: 40px;
+  width: 40%;
+}
+
+.I {
+  display: inline-block;
+  font-size: 220px;
+}
+
+.websites {
+  display: inline-block;
+  font-size: 120px;
+}
+
+.about-text {
+  font-size: 40px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+/* / For smaller screens  */
+
+@media (max-width: 600px) {
+  .about-container {
+    margin: 100px 0px 50px 0px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-box {
+    padding-left: 20px;
+    width: auto;
+    order: 1;
+  }
+
+  .right-box {
+    padding: 10px;
+    width: auto;
+  }
+
+  .I {
+    display: inline-block;
+    font-size: 120px;
+  }
+
+  .websites {
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    padding-right: 40px;
+  }
+}
+
+
+/* / For medium screens  */ 
+
+@media ( min-width: 601px ) and ( max-width: 1200px ) {
+  .about-container {
+    margin: 100px 0px 50px 0px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-box {
+    padding-left: 20px;
+    width: auto;
+    order: 1;
+  }
+
+  .right-box {
+    padding: 10px;
+    width: auto;
+  }
+
+  .I {
+    display: inline-block;
+    font-size: 120px;
+  }
+
+  .websites {
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    padding-right: 40px;
+  }
+}
+
+
+
+/* Contact me Section */ 
+
+
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.contact-text {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.contact-link {
+  margin: 0px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 0px;
+  font-size: 24px;
+  color: seagreen;
+}
+
+/* / For smaller screens */
+
+@media (max-width: 600px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-text {
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+
+  .contact-link {
+    margin: 0px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 18px;
+    color: seagreen;
+  }
+}
+
