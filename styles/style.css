@@ -1,6 +1,5 @@
-* {
-  padding: 0px;
-  margin: 0px;
+* { 
+  margin: 0px;  
 }
 
 /* Fonts  */
@@ -238,5 +237,49 @@
     font-size: 18px;
     color: seagreen;
   }
+}
+
+
+/* New Styles  */ 
+
+
+.port-container { 
+  padding-left: 20px; 
+} 
+
+.link { 
+  text-decoration: none; 
+  color: unset; 
+} 
+
+.card { 
+  display: flex; 
+  justify-content: space-between; 
+  height: 50vw; 
+  border-radius: 10px; 
+  border: solid 4px black; 
+  box-shadow: 10px 10px #d8f4ce; 
+  margin-bottom: 40px; 
+  margin-right: 40px; 
+} 
+
+.card-desc { 
+  flex: 1; 
+  margin: 20px; 
+  overflow: scroll; 
+  margin-right: 0px; 
+  border-radius: 10px; 
+} 
+
+.card-desc > p:first-of-type { 
+  font-size: 40px; 
+  text-align: center; 
+  margin: 10px 0px 20px; 
+}
+
+.card-img { 
+  margin: 20px; 
+  margin-left: 0px; 
+  border-radius: 10px; 
 }
 
