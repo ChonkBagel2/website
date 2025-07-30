@@ -277,9 +277,10 @@
   margin: 10px 0px 20px; 
 }
 
-.card-img { 
+.card-img {  
   margin: 20px; 
   margin-left: 0px; 
   border-radius: 10px; 
+  object-fit: cover;
 }
 
