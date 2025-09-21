@@ -1,5 +1,5 @@
-* { 
-  margin: 0px;  
+* {
+  margin: 0px;
 }
 
 /* Fonts  */
@@ -35,12 +35,12 @@
 /* Top section  */
 
 .top-container {
-  height: 90vh;
+  height: 95vh;
   padding-top: 1px;
   /* To avoid margin collapsing */
   border-bottom: solid 2px black;
   box-shadow: 4px 20px 10px lightseagreen;
-  background-image: url("../assets/background.jpg");
+  background-image: url("https://picsum.photos/id/10/1920/1080");
 }
 
 .top-text {
@@ -149,10 +149,9 @@
   }
 }
 
+/* / For medium screens  */
 
-/* / For medium screens  */ 
-
-@media ( min-width: 601px ) and ( max-width: 1200px ) {
+@media (min-width: 601px) and (max-width: 1200px) {
   .about-container {
     margin: 100px 0px 50px 0px;
     height: auto;
@@ -189,11 +188,7 @@
   }
 }
 
-
-
-/* Contact me Section */ 
-
-
+/* Contact me Section */
 
 .contact-container {
   display: flex;
@@ -239,69 +234,64 @@
   }
 }
 
+/* New Styles  */
 
-/* New Styles  */ 
-
-
-.port-container { 
-  padding-left: 20px; 
-}  
-
-.card { 
-  display: flex; 
-  justify-content: space-between; 
-  height: 50vw; 
-  border-radius: 10px; 
-  border: solid 4px black; 
-  box-shadow: 10px 10px #d8f4ce; 
-  margin-bottom: 40px; 
-  margin-right: 40px; 
-} 
-
-.card-desc { 
-  flex: 1; 
-  margin: 20px; 
-  overflow: scroll; 
-  margin-right: 0px; 
-  border-radius: 10px; 
-} 
-
-.link {  
-  margin-top: 20px; 
-  margin-bottom: 20px; 
+.port-container {
+  padding-left: 20px;
 }
 
-.link > a { 
-  font-size: 18px; 
-  font-style: italic; 
-  text-decoration: underline; 
-  color: unset; 
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: 50vw;
+  border-radius: 10px;
+  border: solid 4px black;
+  box-shadow: 10px 10px #d8f4ce;
+  margin-bottom: 40px;
+  margin-right: 40px;
 }
 
-.card-desc > p:first-of-type { 
-  font-size: 40px; 
-  text-align: center; 
-  margin: 10px 0px 20px; 
+.card-desc {
+  flex: 1;
+  margin: 20px;
+  overflow: scroll;
+  margin-right: 0px;
+  border-radius: 10px;
 }
 
-.card-img {  
-  margin: 20px; 
-  margin-left: 0px; 
-  border-radius: 10px; 
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link > a {
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: underline;
+  color: unset;
+}
+
+.card-desc > p:first-of-type {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0px 20px;
+}
+
+.card-img {
+  margin: 20px;
+  margin-left: 0px;
+  border-radius: 10px;
   object-fit: cover;
-} 
+}
 
+@media (max-width: 768px) {
+  .card-desc {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media ( max-width:768px ) { 
-
-  .card-desc { 
-    display: flex; 
-    flex-direction: column; 
-  } 
-
-  .card-img {  
-    border-radius: 10px; 
+  .card-img {
+    border-radius: 10px;
     object-fit: cover;
   }
 }
-
