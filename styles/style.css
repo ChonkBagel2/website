@@ -41,12 +41,63 @@
   border-bottom: solid 2px black;
   box-shadow: 4px 20px 10px lightseagreen;
   background-image: url("https://picsum.photos/id/10/1920/1080");
+  display: flex;
 }
 
 .top-text {
   margin-top: 400px;
   /* Do not use % as % calculation is based on parent's *width*, not height */
   padding-left: 20px;
+}
+
+.top-container p {
+  color: white;
+}
+
+.top-container p:first-of-type {
+  margin-inline: auto;
+  overflow: hidden;
+  /* Keeps on a single line */
+  white-space: nowrap;
+  /* The cursor */
+  border-right: 1px solid;
+  /* steps = number of characters */
+  animation: typing 3s steps(21) forwards, blink 1s 3s 2 step-end forwards;
+}
+
+.top-container p:last-of-type {
+  opacity: 0;
+  animation: appear 2s 3s linear forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* / For smaller screens  */
