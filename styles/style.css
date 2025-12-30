@@ -2,6 +2,18 @@
   margin: 0px;
 }
 
+/* TO DO */
+
+/* My code here needs some serious changes in regards to cleanliness 
+Current Plan - Simplify the Website to have only 1 type of layout 
+i.e., the mobile one, since its' better and the one on the desktop doesn't have 
+much text on left side, making it look blank / disimilar to the right side 
+
+and CLEAN UP THE CODE 
+
+but for now, everything works 
+*/
+
 /* Fonts  */
 
 .italianno-regular {
@@ -109,7 +121,7 @@
     /* To avoid margin collapsing */
     border-bottom: solid 2px black;
     box-shadow: 4px 20px 10px lightseagreen;
-    background-image: url("../assets/background.jpg");
+    background-image: url("https://picsum.photos/id/10/1920/1080");
   }
 
   .top-text {
