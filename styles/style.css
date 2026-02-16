@@ -129,6 +129,14 @@ but for now, everything works
     /* Do not use % as % calculation is based on parent's *width*, not height */
     padding-left: 20px;
   }
+
+  .top-container p:first-of-type {
+    font-size: 50px;
+  }
+
+  .top-container p:last-of-type {
+    font-size: 22px;
+  }
 }
 
 /* About section  */
